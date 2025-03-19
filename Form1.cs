@@ -207,8 +207,9 @@ namespace GenesaReportProgram
                 mail.To.Add(txtMail.Text); 
                 mail.Subject = "Conferma Ordine";
                 mail.Body = "Ciao " + txtName.Text + ", " +
-                    "\nti invio la conferma d'ordine in modo che tu possa controllare e nel caso qualcosa non coincida con quello che abbiamo deciso fammi sapere." +
-                    "\nUn abbraccio," +
+                    "\nsono Elisa di Alhena genesa in allegato la conferma del tuo ordine." +
+                    "\nQuando il corriere ritirerà il tuo pacco, ti manderò un messaggio su WhatsApp, cosicché tu possa controllare la casella di posta elettronica per seguire la tracciatuta del pacco." + 
+                    "\nUn caro abbraccio," +
                     "\nElisa";
 
                 MemoryStream pdfStream = new MemoryStream(pdf);
@@ -217,8 +218,6 @@ namespace GenesaReportProgram
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
                 smtp.Credentials = new NetworkCredential("elisaperozzo1976@gmail.com", Environment.GetEnvironmentVariable("GMAIL_APP_PASSWORD", EnvironmentVariableTarget.User));
                 smtp.EnableSsl = true;
-                
-
 
                 smtp.Send(mail);
 
