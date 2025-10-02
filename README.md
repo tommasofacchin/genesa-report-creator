@@ -20,8 +20,8 @@ If a client or item is not already in the JSON files, the program will automatic
 
 
 ![Form](image.png)
-
 <sub>the pdf export is actually centered :)</sub>
+
 ---
 
 ## Project Structure
