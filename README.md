@@ -21,6 +21,7 @@ If a client or item is not already in the JSON files, the program will automatic
 
 ![Form](image.png)
 
+the pdf export is actually centered :)
 ---
 
 ## Project Structure
