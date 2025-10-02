@@ -18,6 +18,9 @@ When the program starts, it loads the client and item data from `clients.json` a
 
 If a client or item is not already in the JSON files, the program will automatically save the new data for future use. This ensures that repetitive information only needs to be entered once.
 
+
+![Form](image.png)
+
 ---
 
 ## Project Structure
